@@ -25,6 +25,15 @@ ul.nav a:hover {
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    gap: 10px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .grid-item {
     background-color: lightblue;
     text-align: center;
@@ -33,26 +42,121 @@ ul.nav a:hover {
     grid-row: 1;
     grid-column: 1 / span 3;
 }
+
+ nav {
+        background-color: #333;
+        }
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+        nav li {
+        margin-right: 20px;
+        }
+        nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        }
+        /* Hover effect */
+        nav a:hover {
+        background-color: #575757;
+        }
+        /* Active (current page) link */
+        nav a.active {
+        background-color: #04AA6D;  /* a green highlight */
+        font-weight: bold;          /* make it stand out */
+        }
+
 .main-img {
-    grid-row: 2;
-    grid-column: 2 / span 2;
+    grid-row: 2 ;
+    grid-column: 1 / span 9;
+      grid-column: 1 / 4;
 }
 .image1 {
     max-height: 400px;
-    max-width: 800px;
+    max-width: 1100px;
+ width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 .main1 {
     grid-row: 3;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 5;
     padding: 30px;
 }
-.main2 {
+
+
+.supportsection1 {
+    grid-column: 1 / span 2;
     grid-row: 4;
-    grid-column: 1 / span 2;
+    padding: 30px;
+    background-color:red;
+}
+.supportsection2 {
+    grid-column: -2 / span 3;
+    grid-row: 4;
+    padding: 30px;
+    background-color: red;
+}
+
+.sidenav {
+    grid-column: 6 / span 4;
+    grid-row: 3 / span 8;
+    padding: 30px;
+    background-color: red;
+}
+
+.main2 {
+    grid-row: 5 / span 6;
+    grid-column: 1 / span 5;
     padding: 30px;
 }
-.sidecontent {
-    grid-column: 1;
-    grid-row: 5 / span 2;
-    padding: 30px;
+
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+   color:rgb(252, 252, 252);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
 }
+
+.header{
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.nav-menu{
+    grid-column: 1 / 4;
+    background: gray;
+}
+
+.sidecontent{
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;
+}
+
+.main1{
+    grid-column: 1 / 3;
+}
+
+.main2{
+    grid-column: 1 / 3;
+}
+
+.grid-item{
+    padding:20px;
+}
+
+body{
+    background:#d3d3d3;
+    font-family:"Times New Roman", serif;
+}
+
+
+
